@@ -3,6 +3,7 @@
 # Script created by @Sunnam01ram
 
 
+
 dependencies() {
 
 command -v git > /dev/null 2>&1 || { echo >&2 "Package GIT is not installed ... Unable to update ..."; exit 1; }
