@@ -1033,20 +1033,20 @@ fi
 ## Xnxx
 
 printf "\e[1;77m[\e[0m\e[1;92m+\e[0m\e[1;77m] Xnxx: \e[0m"
-check1=$(curl -s -i "https://Xnxx.com/user/$username" -H "Accept-Language: en" -L | grep -o 'profile:username' ; echo $?)
+check1=$(curl -s -i "https://xnxx.com/user/$username" -H "Accept-Language: en" -L | grep -o 'profile:username' ; echo $?)
 
 if [[ $check1 == *'1'* ]] ; then 
 printf "\e[1;93mNot Found!\e[0m\n"
 elif [[ $check1 == *'0'* ]]; then 
 
-printf "\e[1;92m Found!\e[0m https://Xnxx.com/~%s\n" $username
-printf "https://Xnxx.com/~%s\n" $username >> $username.txt
+printf "\e[1;92m Found!\e[0m https://xnxx.com/~%s\n" $username
+printf "https://xnxx.com/~%s\n" $username >> $username.txt
 fi
 
 ## Xredwap
 
-printf "\e[1;77m[\e[0m\e[1;92m+\e[0m\e[1;77m] Xredwap: \e[0m"
-check1=$(curl -s -i "https://Xredwap.com/user/$username" -H "Accept-Language: en" -L | grep -o 'profile:username' ; echo $?)
+printf "\e[1;77m[\e[0m\e[1;92m+\e[0m\e[1;77m] xRedwap: \e[0m"
+check1=$(curl -s -i "https://xredwap.com/user/$username" -H "Accept-Language: en" -L | grep -o 'profile:username' ; echo $?)
 
 if [[ $check1 == *'1'* ]] ; then 
 printf "\e[1;93mNot Found!\e[0m\n"
